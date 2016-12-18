@@ -9,17 +9,20 @@
 
     <title>Pairing with Pat.com</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills">
-            <li><a href="<%= page_path(@conn, :index) %>">Home</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div class="ui attached stackable menu">
+      <div class="ui container">
+        <a class="item" href="<%= page_path(@conn, :index) %>">
+          <i class="home icon"></i> Home
+        </a>
+      </div>
+    </div>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
