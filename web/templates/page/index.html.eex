@@ -1,7 +1,4 @@
-<div class="jumbotron">
-  <h2>Pairing with Pat.com</h2>
-  <p class="lead">A window into the world of web development.</p>
-</div>
-
-<div class="row marketing">
+<div class="ui vertical segment">
+  <h1>Pairing with Pat.com</h1>
+  <h3>A window into the world of web development.</h3>
 </div>
